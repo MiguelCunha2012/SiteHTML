@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/CSS" href="Formulário.CSS"/>
+</head>
+<body>
+    <div>
+    <h1 id="Titulo">Cadastro Net Design Perfect </h1>
+    <p id="Subtitulo"><strong>Faça o seu cadastro.</strong></p>
+    <br>
+    </div>
+    <form>
+            <fieldset class="">
+            <label for="Nome"><strong>Nome</strong></label>
+                <div>
+                    <input type="text" name="Nome" id="Nome" required>
+                </div>    
+                <div class="Campo">
+                    <label for="diaa">Informe a data do seu aniversário:</label>
+                    <input type="date" id="aniversário" name="Dia" required
+                        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
+                      <span class="validity"></span>
+                    </div>
+            <label for="Bens Pessoais"><strong>Bens Pessoais</strong></label> 
+                <div>
+                <input type="radio" name="Carro" value="Carro">Carro
+                </div>    
+            </label>
+            <label>
+                <div>
+                <input type="radio" name="Moto" value="Moto">Moto
+                </div>
+            </label>
+            <label>
+                <div>
+                <input type="radio" name="Casa" value="Casa">Casa  
+                </div>        
+            </label>                           
+            <div>
+                <label for="Endereço"><strong>Endereço</strong></label>
+                <input type="text" name="Endereço" id="Endereço">
+                </div>
+            <label><strong>Número</strong></label>
+                <input type="number" name="Número" id="Número">
+                </div> 
+            <div>
+            <label><strong>Cidade</strong></label>   
+            <input type="text" name="Cidade" id="Cidade">
+            </div>  
+            <label><strong>Estado</strong></label>
+                <select name="Estado" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+            </select>
+            <div>
+                <label><strong>Sexo</strong></label>
+                <select name="Sexo" id="Sexo" required>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Prefiro não dizer">Prefiro não dizer</option>
+                </select>
+            </div>      
+            <label><strong>Descreva você</strong></label>
+                <div>
+                    <textarea name="Descreva você" id="Descreva" cols="30" rows="10"></textarea>
+                </div>
+                <button class="Botão"><Strong>Concluido</Strong></button>   
+        </fieldset>
+    </form>
+</body>
+</html>
+<!--Acredito que o HTML esteja tudo certo-->
